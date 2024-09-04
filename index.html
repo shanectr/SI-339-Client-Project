@@ -3,90 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Athlete Profile - Cross Country</title>
+    <title>Cross Country Runner Progress</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file for styling -->
   </head>
+
   <body>
-    <header class="site-header">
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#athletes">Athletes</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Header Section -->
+    <header id="header">
+      <div id="header-container" class="container">
+        <div id="team-logo" class="logo">
+          <img src="path/to/team-logo.png" alt="Team Logo" />
+          <!-- Team logo image -->
+        </div>
+        <div id="team-info" class="info">
+          <h1 id="team-name">Team Name</h1>
+          <!-- Replace with actual team name -->
+          <p id="team-location">Location: City, State</p>
+          <!-- Replace with actual location -->
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section class="athlete-profile">
-        <h1 class="athlete-name">Athlete Name</h1>
-        <div class="athlete-info">
+    <!-- Navigation Section -->
+    <nav id="main-navigation" class="navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#progress">Progress</a></li>
+        <li class="nav-item"><a href="#photos">Photos</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main id="main-content" class="content">
+      <!-- Athlete Profile Section -->
+      <section id="athlete-profile" class="section">
+        <h2 class="section-title">Athlete Profile</h2>
+        <div id="athlete-details" class="profile-details">
           <img
-            src="athlete-photo.jpg"
+            id="athlete-photo"
+            src="path/to/athlete-photo.jpg"
             alt="Athlete Photo"
-            class="athlete-photo"
           />
-          <ul class="athlete-details">
-            <li><strong>Team:</strong> Example High School</li>
-            <li><strong>Grade:</strong> 11</li>
-            <li><strong>Events:</strong> 5k, 3200m</li>
-            <li>
-              <strong>Personal Bests:</strong>
-              <ul>
-                <li>5k: 16:45</li>
-                <li>3200m: 9:45</li>
-              </ul>
-            </li>
-          </ul>
+          <!-- Athlete's photo -->
+          <div id="athlete-info" class="info">
+            <h3 id="athlete-name">Athlete Name</h3>
+            <!-- Replace with actual athlete name -->
+            <p id="athlete-school">School: School Name</p>
+            <!-- Replace with actual school name -->
+            <p id="athlete-grade">Grade: 12</p>
+            <!-- Replace with actual grade -->
+          </div>
         </div>
       </section>
 
-      <section class="athlete-stats">
-        <h2>Performance Stats</h2>
-        <table class="stats-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Event</th>
-              <th>Time</th>
-              <th>Place</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2024-08-12</td>
-              <td>5k</td>
-              <td>16:45</td>
-              <td>3rd</td>
-            </tr>
-            <!-- More rows as needed -->
-          </tbody>
-        </table>
+      <!-- Progress Section -->
+      <section id="athlete-progress" class="section">
+        <h2 class="section-title">Runner Progress</h2>
+        <div id="progress-overview" class="progress-container">
+          <!-- Yearly progress summary -->
+          <table id="progress-table" class="table">
+            <thead class="table-header">
+              <tr>
+                <th>Year</th>
+                <th>Event</th>
+                <th>Time</th>
+                <th>Rank</th>
+                <th>Record</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <!-- Placeholder for data rows, will be filled with actual data -->
+              <tr>
+                <td>2023</td>
+                <td>5K</td>
+                <td>17:34</td>
+                <td>2</td>
+                <td>SR</td>
+              </tr>
+              <tr>
+                <td>2022</td>
+                <td>5K</td>
+                <td>18:10</td>
+                <td>5</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Progress Graph Section -->
+        <div id="progress-graph" class="graph-container">
+          <h3 class="graph-title">Progress Over Time</h3>
+          <canvas id="progressChart"></canvas>
+          <!-- Canvas for a potential progress graph -->
+        </div>
       </section>
 
-      <section class="athlete-updates">
-        <h2>Latest Updates</h2>
-        <article class="update">
-          <h3>Upcoming Meet</h3>
-          <p>
-            Don't miss the next big meet on September 15th. Our team is gearing
-            up to set new records!
-          </p>
-        </article>
-        <article class="update">
-          <h3>Training Tips</h3>
-          <p>
-            Check out these new training tips to improve your endurance and
-            speed.
-          </p>
-        </article>
+      <!-- Photo Gallery Section -->
+      <section id="photo-gallery" class="section">
+        <h2 class="section-title">Favorite Photos</h2>
+        <div id="upload-photo" class="upload-container">
+          <label for="photo-upload">Upload your favorite photo:</label>
+          <input
+            type="file"
+            id="photo-upload"
+            name="photo-upload"
+            accept="image/*"
+          />
+        </div>
+        <div id="photo-thumbnails" class="thumbnails-container">
+          <!-- Placeholder for thumbnails of uploaded photos -->
+          <div class="thumbnail">
+            <img src="path/to/photo1.jpg" alt="Photo 1" />
+          </div>
+          <div class="thumbnail">
+            <img src="path/to/photo2.jpg" alt="Photo 2" />
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2024 Cross Country Team. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="footer">
+      <div id="footer-container" class="container">
+        <div id="print-version" class="print-option">
+          <a href="print-version.html">Printable Version</a>
+          <!-- Link to a printable version of the page -->
+        </div>
+      </div>
     </footer>
   </body>
 </html>
