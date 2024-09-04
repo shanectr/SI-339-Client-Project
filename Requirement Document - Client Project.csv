@@ -1,0 +1,20 @@
+Requirement Document - Client Project
+data-name,data-type
+athlete-name,String
+athlete-school,String
+athlete-school-location,String
+athlete-school-logo,Img
+athlete-school-mascot,String
+athlete-age,String
+athlete-grade,String
+gender,String
+races,"[[String, String, Int, Bool, Bool]]"
+race-name,String
+race-time,String
+race-placement,Int
+season-record,Bool
+personal-record,Bool
+,
+athlete-imgs,[Img]
+school-color-primary,Color
+school-color-secondary,Color
