@@ -4,39 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cross Country Runner Progress</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Link to your CSS file for styling -->
   </head>
-
   <body>
-    <!-- Header Section -->
-    <header id="header">
-      <div id="header-container" class="container">
-        <div id="team-logo" class="logo">
-          <img src="path/to/team-logo.png" alt="Team Logo" />
-          <!-- Team logo image -->
-        </div>
-        <div id="team-info" class="info">
-          <h1 id="team-name">Team Name</h1>
-          <!-- Replace with actual team name -->
-          <p id="team-location">Location: City, State</p>
-          <!-- Replace with actual location -->
-        </div>
-      </div>
-    </header>
-
-    <!-- Navigation Section -->
-    <nav id="main-navigation" class="navigation">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#progress">Progress</a></li>
-        <li class="nav-item"><a href="#photos">Photos</a></li>
-        <li class="nav-item"><a href="#about">About</a></li>
-      </ul>
-    </nav>
-
     <!-- Main Content Section -->
     <main id="main-content" class="content">
+      <!-- Team Information Section -->
+      <section id="team-info" class="section">
+        <div id="team-logo" class="logo">
+          <img src="path/to/team-logo.png" alt="Team Logo" />
+        </div>
+        <div id="team-details" class="info">
+          <h1 id="team-name">Team Name</h1>
+          <p id="team-location">Location: City, State</p>
+        </div>
+      </section>
+
+      <!-- Navigation Section -->
+      <nav id="main-navigation" class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#athlete-profile">Athlete Profile</a>
+          </li>
+          <li class="nav-item"><a href="#athlete-progress">Progress</a></li>
+          <li class="nav-item"><a href="#photo-gallery">Photos</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+        </ul>
+      </nav>
+
       <!-- Athlete Profile Section -->
       <section id="athlete-profile" class="section">
         <h2 class="section-title">Athlete Profile</h2>
@@ -46,14 +40,10 @@
             src="path/to/athlete-photo.jpg"
             alt="Athlete Photo"
           />
-          <!-- Athlete's photo -->
           <div id="athlete-info" class="info">
             <h3 id="athlete-name">Athlete Name</h3>
-            <!-- Replace with actual athlete name -->
             <p id="athlete-school">School: School Name</p>
-            <!-- Replace with actual school name -->
             <p id="athlete-grade">Grade: 12</p>
-            <!-- Replace with actual grade -->
           </div>
         </div>
       </section>
@@ -62,7 +52,6 @@
       <section id="athlete-progress" class="section">
         <h2 class="section-title">Runner Progress</h2>
         <div id="progress-overview" class="progress-container">
-          <!-- Yearly progress summary -->
           <table id="progress-table" class="table">
             <thead class="table-header">
               <tr>
@@ -74,7 +63,6 @@
               </tr>
             </thead>
             <tbody class="table-body">
-              <!-- Placeholder for data rows, will be filled with actual data -->
               <tr>
                 <td>2023</td>
                 <td>5K</td>
@@ -92,11 +80,9 @@
             </tbody>
           </table>
         </div>
-        <!-- Progress Graph Section -->
         <div id="progress-graph" class="graph-container">
           <h3 class="graph-title">Progress Over Time</h3>
           <canvas id="progressChart"></canvas>
-          <!-- Canvas for a potential progress graph -->
         </div>
       </section>
 
@@ -113,12 +99,11 @@
           />
         </div>
         <div id="photo-thumbnails" class="thumbnails-container">
-          <!-- Placeholder for thumbnails of uploaded photos -->
           <div class="thumbnail">
-            <img src="path/to/photo1.jpg" alt="Photo 1" />
+            <img src="path/to/photo1.jpg" alt="Athlete's favorite photo 1" />
           </div>
           <div class="thumbnail">
-            <img src="path/to/photo2.jpg" alt="Photo 2" />
+            <img src="path/to/photo2.jpg" alt="Athlete's favorite photo 2" />
           </div>
         </div>
       </section>
@@ -129,7 +114,6 @@
       <div id="footer-container" class="container">
         <div id="print-version" class="print-option">
           <a href="print-version.html">Printable Version</a>
-          <!-- Link to a printable version of the page -->
         </div>
       </div>
     </footer>
