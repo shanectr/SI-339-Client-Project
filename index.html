@@ -9,13 +9,16 @@
     <!-- Main Content Section -->
     <main id="main-content" class="content">
       <!-- Team Information Section -->
-      <section id="team-info" class="section">
-        <div id="team-logo" class="logo">
-          <img src="path/to/team-logo.png" alt="Team Logo" />
+      <section id="team-info-container" class="section">
+        <div id="team-logo-container" class="logo">
+          <img src="path/to/athlete-school-logo.png" alt="Team Logo" />
         </div>
-        <div id="team-details" class="info">
-          <h1 id="team-name">Team Name</h1>
-          <p id="team-location">Location: City, State</p>
+
+        <div class="team-info-container">
+          <p id="athlete-school-mascot" class="team-mascot">Team Mascot</p>
+          <p id="athlete-school-location" class="team-location">
+            Location: City, State
+          </p>
         </div>
       </section>
 
@@ -26,24 +29,20 @@
             <a href="#athlete-profile">Athlete Profile</a>
           </li>
           <li class="nav-item"><a href="#athlete-progress">Progress</a></li>
-          <li class="nav-item"><a href="#photo-gallery">Photos</a></li>
-          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#photo-gallery">Favorite Photos</a></li>
         </ul>
       </nav>
 
       <!-- Athlete Profile Section -->
-      <section id="athlete-profile" class="section">
-        <h2 class="section-title">Athlete Profile</h2>
-        <div id="athlete-details" class="profile-details">
-          <img
-            id="athlete-photo"
-            src="path/to/athlete-photo.jpg"
-            alt="Athlete Photo"
-          />
-          <div id="athlete-info" class="info">
-            <h3 id="athlete-name">Athlete Name</h3>
-            <p id="athlete-school">School: School Name</p>
+      <section class="athlete-profile">
+        <h1 id="athlete-name" class="athlete-name">Ben Randi</h1>
+
+        <div class="athlete-details">
+          <div class="athlete-info">
+            <p id="athlete-school">School: Lake Orion High School</p>
             <p id="athlete-grade">Grade: 12</p>
+            <p id="athlete-age">18</p>
+            <p id="gender">M</p>
           </div>
         </div>
       </section>
@@ -55,41 +54,36 @@
           <table id="progress-table" class="table">
             <thead class="table-header">
               <tr>
-                <th>Year</th>
-                <th>Event</th>
+                <th>Race Name</th>
                 <th>Time</th>
-                <th>Rank</th>
+                <th>Placement</th>
                 <th>Record</th>
               </tr>
             </thead>
             <tbody class="table-body">
+              <!-- repeat this block for each race -->
               <tr>
-                <td>2023</td>
-                <td>5K</td>
-                <td>17:34</td>
-                <td>2</td>
-                <td>SR</td>
+                <td class="race-name">Algonac Muskrat Classic Run</td>
+                <td class="race-time">17:34</td>
+                <td class="race-placement">2</td>
+                <td class="record">SR</td>
               </tr>
-              <tr>
-                <td>2022</td>
-                <td>5K</td>
-                <td>18:10</td>
-                <td>5</td>
-                <td></td>
-              </tr>
+              <!-- Example race, more can be added in this table body -->
             </tbody>
           </table>
         </div>
         <div id="progress-graph" class="graph-container">
           <h3 class="graph-title">Progress Over Time</h3>
+          <!-- This graph will be filled in with progress overtime -->
           <canvas id="progressChart"></canvas>
         </div>
       </section>
 
       <!-- Photo Gallery Section -->
-      <section id="photo-gallery" class="section">
+      <section id="photo-gallery" class="athlete-imgs">
         <h2 class="section-title">Favorite Photos</h2>
         <div id="upload-photo" class="upload-container">
+          <!-- This section allows athlets to upload their favorite photos -->
           <label for="photo-upload">Upload your favorite photo:</label>
           <input
             type="file"
